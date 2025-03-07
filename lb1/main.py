@@ -109,6 +109,7 @@ class Solution:
                             if self.debug:
                                 self.iter_count += 1
                         return stack
+                print(f"Точка {x} {y} не подошла.\n")
         return stack
 
     def print_solution(self, comb):
