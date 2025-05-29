@@ -6,7 +6,7 @@ def get_edit_sequence(replace_cost, insert_cost, delete_cost, A, B, debug=False)
     for j in range(len_B + 1):
         dp[0][j] = j * insert_cost
         if debug:
-            print(f"Инициализация: вставка {j} символов -> стоимость {dp[0][j]}, операции: {ops[0][j]}")
+            print(f"Инициализация: вставка {j} символов -> стоимость {dp[0][j]}")
 
     for i in range(1, len_A + 1):
         dp[i][0] = dp[i - 1][0] + delete_cost
